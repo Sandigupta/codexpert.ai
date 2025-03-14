@@ -24,7 +24,7 @@ const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 
 
 app.get('/', async (req, res) => {
-    res.statusCode(200).send({
+    res.status(200).send({
     message:"Hello from Codexpert 🙏",
     })
 })
